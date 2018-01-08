@@ -1,0 +1,18 @@
+<div class="ui-g">
+    <form novalidate>
+        <pe-steps [(activeIndex)]="activeIndex" (change)="onChange($event)">
+            <pe-step label="Define Packaging">
+               <app-define-step></app-define-step>
+            </pe-step>
+            
+            <pe-step label="Confirm Step">
+                <app-confirm-step></app-confirm-step>
+            </pe-step>
+            
+            <pe-step label="Review Step">
+                <app-review-step></app-review-step>
+            </pe-step>
+        </pe-steps>
+    </form>
+</div>
+
